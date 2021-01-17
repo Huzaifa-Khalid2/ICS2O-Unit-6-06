@@ -1,10 +1,14 @@
 document.getElementById('my-btn').addEventListener('click', myFunction)
 function myFunction () {
-  let age = document.getElementById('my-text').value
-  age = parseInt(age)
-  if (age === '15') {
-    alert('congratulations you guessed right!')
+  let myage = 1
+  myage = document.getElementById('my-text').value
+  myage = parseInt(myage) 
+  yourguess = document.getElementById('my-text').value
+  yourguess = parseInt(yourguess)
+  while (myage <= yourguess) { 
+  alert('Horray :) you guessed right!') 
+  myage++;
   } else {
-    alert('Sorry you guessed worng:( better luck next time!')
+    alert('You guessed wrong:( better luck next time')
   }
-}
+  }
